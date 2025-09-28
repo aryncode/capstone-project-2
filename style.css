@@ -1,0 +1,260 @@
+html{
+    background-color: #ffff00;
+}
+
+#home{
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.hero-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-family: "source code pro";
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.hero-introcontainer{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hero-introcontainer h1{
+    float: left;
+    max-width: 60%;
+    margin: 0;
+    font-size: 4rem;
+    font-family: "source code pro";
+    
+}
+
+.hero-introcontainer img{
+    float: right;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.hr{
+    border: none;
+    border-bottom: 3px solid #ffff00;
+    margin: 0;
+}
+
+#skills{
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+    padding-bottom: 90px;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-container h3{
+    font-family: "source code pro";
+    font-size: 2.5rem;
+}
+
+.skill-container p{
+    font-family:"source code pro";
+    font-size: large;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: gray;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skillbox{
+    background-color: rgb(0, 0, 0); /*here is the problem (change the color and see*/
+    padding: 40px;
+    border-radius: 10%;
+    
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-elements{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+    justify-content: center;
+}
+
+.skill-elements img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+#projects{
+    background-color: black;
+    color: #ffff00;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+.pr-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pr-container h3{
+    font-family: "source code pro";
+    font-size: 2.5rem;
+}
+
+.pr-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 40px;
+}
+
+.pr-elements{
+    background-color: rgb(27, 26, 26);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+    justify-content: center;
+}
+
+.pr-elements img{
+    width: 270px;
+    height: 300px;
+    padding-bottom: 100px;
+}
+
+.pr-elements p{
+    font-family:"source code pro";
+    font-size: large;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: gray;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#about{
+    background-color: black;
+    color: #ffff00;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+#about h3{
+    font-family: "source code pro";
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#about p{
+    text-align: center;
+    padding: 50px;
+    padding-top: 330px;
+    padding-bottom: 330px;
+    font-size: 2rem;
+    font-family: "source code pro"; 
+}
+
+#contact{
+    background-color: black;
+    color: #ffff00;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+#contact h3{
+    font-family: "source code pro";
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#contact p{
+    text-align: center;
+    padding: 50px;
+    padding-top: 330px;
+    padding-bottom: 330px;
+    font-size: 2rem;
+    font-family: "source code pro"; 
+}
+
+/* Default: 4 columns */
+.pr-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 40px;
+}
+
+/* Tablets: 2 columns */
+@media (max-width: 1024px) {
+  .pr-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .pr-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .pr-elements img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .pr-elements p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
